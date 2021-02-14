@@ -32,7 +32,7 @@ public class ConfirmDeleteController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int rowDeleted = 0;
+        int rowDeleted = 0; 
         HttpSession session = request.getSession();     
         Employee emp = (Employee) session.getAttribute("DeleteEmployee");
         if (request.getParameter("delete") != null ) {
